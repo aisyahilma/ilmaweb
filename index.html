@@ -5,33 +5,75 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Aisyah Ilma Darajat Hamid - Personal Website</title>
+    <!-- Tailwind CSS -->
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
     />
+    <!-- FontAwesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
     <link rel="stylesheet" href="styles.css" />
   </head>
+
   <body class="bg-gray-50 text-gray-900">
+    <!-- Header -->
+    <header class="flex justify-between items-center p-6 bg-white shadow-md">
+      <div class="text-2xl font-bold">
+        <span class="text-green-600">Ilma</span> Darajat
+      </div>
+      <nav>
+        <ul class="flex space-x-6">
+          <li>
+            <a href="#about" class="text-gray-700 hover:text-red-600">About</a>
+          </li>
+          <li>
+            <a href="#services" class="text-gray-700 hover:text-red-600"
+              >Services</a
+            >
+          </li>
+          <li>
+            <a href="#portfolio" class="text-gray-700 hover:text-red-600"
+              >Portfolio</a
+            >
+          </li>
+          <li>
+            <a href="#testimonials" class="text-gray-700 hover:text-red-600"
+              >Testimonials</a
+            >
+          </li>
+          <li>
+            <a href="#contact" class="text-gray-700 hover:text-red-600"
+              >Contact</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+
     <!-- Hero Section -->
-    <section
-      id="hero"
-      class="flex justify-center items-center h-screen bg-center bg-cover text-center relative"
-      style="
-        background-image: url(file:///G:/Web/ilmaweb/images/desktop-wallpaper-white-gaming.jpg);
-      "
-    >
-      <div class="bg-black bg-opacity-60 p-8 rounded-lg">
-        <h1 class="text-6xl font-extrabold text-white drop-shadow-lg">
-          Hi, I'm Aisyah Ilma Darajat Hamid
+    <section class="flex justify-between items-center h-screen p-12 bg-red-100">
+      <div class="max-w-xl">
+        <h1 class="text-5xl font-extrabold text-gray-900">
+          Hi! I'm Aisyah Ilma Darajat Hamid
         </h1>
-        <p class="mt-4 text-xl text-gray-200">
+        <p class="mt-4 text-xl text-gray-700">
           A Passionate Web Developer and Quran Teacher
         </p>
         <a
           href="#about"
-          class="mt-6 inline-block px-8 py-4 bg-red-600 text-white font-semibold rounded-lg hover:bg-red-700 transition duration-300 shadow-lg"
+          class="mt-6 inline-block px-8 py-4 bg-red-600 text-white font-semibold rounded-lg hover:bg-red-700 transition duration-300"
           >Learn More About Me</a
         >
+      </div>
+      <div class="flex justify-center">
+        <img
+          src="file:///G:/Web/ilmaweb/images/%E2%80%94Pngtree%E2%80%94illustration%20of%20sisters%20standing%20in_6852806.png"
+          alt="Aisyah Ilma Darajat Hamid"
+          class="w-1/3 h-auto rounded-lg shadow-lg"
+        />
       </div>
     </section>
 
@@ -74,7 +116,7 @@
       <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
         <div class="bg-white p-6 rounded-lg shadow-lg">
           <img
-            src="file:///G:/Web/ilmaweb/images/original-f385cf72ef26cc1366a1c521e18c2f5c.jpg"
+            src="portfolio-image-url.jpg"
             alt="Project Image"
             class="w-full h-auto mb-4 rounded-lg"
           />
@@ -89,11 +131,13 @@
 
     <!-- Testimonials Section -->
     <section id="testimonials" class="m-20 p-12 bg-white rounded-lg shadow-lg">
-      <h2 class="text-4xl font-bold mb-8 text-center">What People Say About Me</h2>
+      <h2 class="text-4xl font-bold mb-8 text-center">
+        What People Say About Me
+      </h2>
       <div class="flex justify-around">
         <div class="w-1/3 p-6 text-center">
           <img
-            src="file:///G:/Web/ilmaweb/images/68af0cd22ea9ba61ad822bb6cef1b727.jpg"
+            src="file:///G:/Web/ilmaweb/images/b3bee19219052788e7adbee920dd5c25.jpg"
             alt="John Doe"
             class="w-24 h-24 rounded-full mx-auto mb-4"
           />
@@ -105,7 +149,7 @@
         </div>
         <div class="w-1/3 p-6 text-center">
           <img
-            src="file:///G:/Web/ilmaweb/images/b3bee19219052788e7adbee920dd5c25.jpg"
+            src="file:///G:/Web/ilmaweb/images/68af0cd22ea9ba61ad822bb6cef1b727.jpg"
             alt="Jane Smith"
             class="w-24 h-24 rounded-full mx-auto mb-4"
           />
@@ -148,54 +192,44 @@
               name="message"
               rows="6"
               class="form-control px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-500"
-              placeholder="Message"
+              placeholder="Your Message"
               required
             ></textarea>
             <input
               type="submit"
               value="Send Message"
-              class="form-control bg-red-600 text-white px-4 py-3 rounded-lg hover:bg-red-700 transition duration-300 shadow-lg"
+              class="bg-red-600 text-white px-6 py-3 rounded-lg hover:bg-red-700 transition duration-300"
             />
           </div>
         </form>
       </div>
+
+      <!-- Social Media Icons -->
+      <div class="mt-12 flex justify-center space-x-6">
+        <a
+          href="https://www.linkedin.com/in/aisyah-ilma-darajat-hamid-218637122/"
+          class="text-3xl text-gray-700 hover:text-blue-700 transition duration-300"
+        >
+          <i class="fab fa-linkedin"></i>
+        </a>
+        <a
+          href="https://www.instagram.com/ilma.darajat/"
+          class="text-3xl text-gray-700 hover:text-pink-500 transition duration-300"
+        >
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a
+          href="https://github.com/aisyahilma"
+          class="text-3xl text-gray-700 hover:text-black transition duration-300"
+        >
+          <i class="fab fa-github"></i>
+        </a>
+      </div>
     </section>
 
     <!-- Footer -->
-    <footer class="bg-red-600 text-white p-6 text-center">
+    <footer class="p-6 text-center bg-gray-900 text-white">
       <p>&copy; 2024 Aisyah Ilma Darajat Hamid. All Rights Reserved.</p>
-      <div class="flex justify-center space-x-6 mt-4">
-        <a
-          href="https://www.linkedin.com/in/aisyah-ilma-darajat-hamid-218637122/"
-          class="hover:text-gray-300"
-        >
-          <img
-            src="file:///G:/Web/ilmaweb/images/pngwing.com%20(2).png"
-            alt="LinkedIn Icon"
-            class="w-8 h-8 inline-block"
-          />
-        </a>
-        <a
-          href="https://github.com/aisyahilma/"
-          class="hover:text-gray-300"
-        >
-          <img
-            src="file:///G:/Web/ilmaweb/images/pngwing.com%20(3).png"
-            alt="GitHub Icon"
-            class="w-8 h-8 inline-block"
-          />
-        </a>
-        <a
-          href="https://ig.me/ilma.darajat"
-          class="hover:text-gray-300"
-        >
-          <img
-            src="file:///G:/Web/ilmaweb/images/pngwing.com%20(4).png"
-            alt="Instagram Icon"
-            class="w-8 h-8 inline-block"
-          />
-        </a>
-      </div>
     </footer>
   </body>
 </html>
