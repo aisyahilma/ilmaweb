@@ -34,4 +34,4 @@ Visitors can explore information about my background, services, portfolio, and t
 - **CSS3 (Tailwind CSS)**: For styling and responsive design.
 - **JavaScript**: For dynamic interactions.
 - **Font Awesome**: For icons.
-- **GitHub Pages**: For hosting the website.
+- **Vercel**: For hosting the website.
