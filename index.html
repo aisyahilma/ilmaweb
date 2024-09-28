@@ -20,12 +20,14 @@
 
   <body class="bg-gray-50 text-gray-900">
     <!-- Header -->
-    <header class="flex justify-between items-center p-6 bg-white shadow-md">
+    <header
+      class="flex flex-wrap justify-between items-center p-6 bg-white shadow-md"
+    >
       <div class="text-2xl font-bold">
         <span class="text-green-600">Ilma</span> Darajat
       </div>
       <nav>
-        <ul class="flex space-x-6">
+        <ul class="flex flex-wrap space-x-4 sm:space-x-6">
           <li>
             <a href="#about" class="text-gray-700 hover:text-red-600">About</a>
           </li>
@@ -54,33 +56,40 @@
     </header>
 
     <!-- Hero Section -->
-    <section class="flex justify-between items-center h-screen p-12 bg-red-100">
-      <div class="max-w-xl">
-        <h1 class="text-5xl font-extrabold text-gray-900">
+    <section
+      class="flex flex-wrap justify-center items-center h-screen p-8 bg-red-100"
+    >
+      <div class="w-full md:max-w-xl text-center md:text-left">
+        <h1 class="text-4xl md:text-5xl font-extrabold text-gray-900">
           Hi! I'm Aisyah Ilma Darajat Hamid
         </h1>
-        <p class="mt-4 text-xl text-gray-700">
+        <p class="mt-4 text-lg md:text-xl text-gray-700">
           A Passionate Web Developer and Quran Teacher
         </p>
         <a
           href="#about"
-          class="mt-6 inline-block px-8 py-4 bg-red-600 text-white font-semibold rounded-lg hover:bg-red-700 transition duration-300"
+          class="mt-6 inline-block px-6 py-3 bg-red-600 text-white font-semibold rounded-lg hover:bg-red-700 transition duration-300"
           >Learn More About Me</a
         >
       </div>
-      <div class="flex justify-center">
+      <div class="w-full md:w-1/3 mt-8 md:mt-0">
         <img
           src="file:///G:/Web/ilmaweb/images/%E2%80%94Pngtree%E2%80%94illustration%20of%20sisters%20standing%20in_6852806.png"
           alt="Aisyah Ilma Darajat Hamid"
-          class="w-1/3 h-auto rounded-lg shadow-lg"
+          class="w-full h-auto rounded-lg shadow-lg"
         />
       </div>
     </section>
 
     <!-- About Section -->
-    <section id="about" class="m-20 p-12 bg-white rounded-lg shadow-lg">
-      <h2 class="text-4xl font-bold mb-8 text-center">About Me</h2>
-      <p class="text-lg text-center text-gray-700 leading-relaxed">
+    <section
+      id="about"
+      class="m-6 md:m-20 p-8 md:p-12 bg-white rounded-lg shadow-lg"
+    >
+      <h2 class="text-3xl md:text-4xl font-bold mb-6 md:mb-8 text-center">
+        About Me
+      </h2>
+      <p class="text-base md:text-lg text-center text-gray-700 leading-relaxed">
         I'm Aisyah Ilma Darajat Hamid, a front-end web developer and Quran
         teacher with a passion for creating modern, responsive websites using
         technologies like HTML, CSS, JavaScript, and React.js. I also have a
@@ -90,18 +99,25 @@
     </section>
 
     <!-- Services Section -->
-    <section id="services" class="m-20 p-12 bg-white rounded-lg shadow-lg">
-      <h2 class="text-4xl font-bold mb-8 text-center">Services I Offer</h2>
-      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+    <section
+      id="services"
+      class="m-6 md:m-20 p-8 md:p-12 bg-white rounded-lg shadow-lg"
+    >
+      <h2 class="text-3xl md:text-4xl font-bold mb-6 md:mb-8 text-center">
+        Services I Offer
+      </h2>
+      <div
+        class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8"
+      >
         <div class="p-6 text-center border border-red-600 rounded-lg shadow-lg">
-          <h3 class="text-2xl font-bold mb-2">Web Development</h3>
+          <h3 class="text-xl md:text-2xl font-bold mb-2">Web Development</h3>
           <p class="text-gray-700">
             I build responsive and scalable websites using modern frameworks
             like React.js, Tailwind CSS, and more.
           </p>
         </div>
         <div class="p-6 text-center border border-red-600 rounded-lg shadow-lg">
-          <h3 class="text-2xl font-bold mb-2">Quran Teaching</h3>
+          <h3 class="text-xl md:text-2xl font-bold mb-2">Quran Teaching</h3>
           <p class="text-gray-700">
             I offer online and offline Quran teaching sessions to help people
             learn and understand the Quran better.
@@ -111,16 +127,25 @@
     </section>
 
     <!-- Portfolio Section -->
-    <section id="portfolio" class="m-20 p-12 bg-gray-100 rounded-lg shadow-lg">
-      <h2 class="text-4xl font-bold mb-8 text-center">My Portfolio</h2>
-      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+    <section
+      id="portfolio"
+      class="m-6 md:m-20 p-8 md:p-12 bg-gray-100 rounded-lg shadow-lg"
+    >
+      <h2 class="text-3xl md:text-4xl font-bold mb-6 md:mb-8 text-center">
+        My Portfolio
+      </h2>
+      <div
+        class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8"
+      >
         <div class="bg-white p-6 rounded-lg shadow-lg">
           <img
             src="file:///G:/Web/ilmaweb/images/original-f385cf72ef26cc1366a1c521e18c2f5c.jpg"
             alt="Project Image"
             class="w-full h-auto mb-4 rounded-lg"
           />
-          <h3 class="text-2xl font-bold mb-2">Personal Website Project</h3>
+          <h3 class="text-xl md:text-2xl font-bold mb-2">
+            Personal Website Project
+          </h3>
           <p class="text-gray-700">
             This project showcases my ability to create a modern personal
             website using HTML, CSS, and JavaScript.
@@ -130,16 +155,19 @@
     </section>
 
     <!-- Testimonials Section -->
-    <section id="testimonials" class="m-20 p-12 bg-white rounded-lg shadow-lg">
-      <h2 class="text-4xl font-bold mb-8 text-center">
+    <section
+      id="testimonials"
+      class="m-6 md:m-20 p-8 md:p-12 bg-white rounded-lg shadow-lg"
+    >
+      <h2 class="text-3xl md:text-4xl font-bold mb-6 md:mb-8 text-center">
         What People Say About Me
       </h2>
-      <div class="flex justify-around">
-        <div class="w-1/3 p-6 text-center">
+      <div class="flex flex-wrap justify-center md:justify-around">
+        <div class="w-full md:w-1/3 p-6 text-center">
           <img
             src="file:///G:/Web/ilmaweb/images/b3bee19219052788e7adbee920dd5c25.jpg"
             alt="John Doe"
-            class="w-24 h-24 rounded-full mx-auto mb-4"
+            class="w-20 h-20 md:w-24 md:h-24 rounded-full mx-auto mb-4"
           />
           <blockquote class="italic text-gray-700">
             "Aisyah is a dedicated and talented web developer. She always
@@ -147,11 +175,11 @@
           </blockquote>
           <p class="mt-4 font-bold text-red-800">- John Doe, Client</p>
         </div>
-        <div class="w-1/3 p-6 text-center">
+        <div class="w-full md:w-1/3 p-6 text-center">
           <img
             src="file:///G:/Web/ilmaweb/images/68af0cd22ea9ba61ad822bb6cef1b727.jpg"
             alt="Jane Smith"
-            class="w-24 h-24 rounded-full mx-auto mb-4"
+            class="w-20 h-20 md:w-24 md:h-24 rounded-full mx-auto mb-4"
           />
           <blockquote class="italic text-gray-700">
             "Her ability to teach and code simultaneously is amazing. Highly
@@ -163,8 +191,11 @@
     </section>
 
     <!-- Contact Section -->
-    <section id="contact" class="m-20 p-12 bg-white rounded-lg shadow-lg">
-      <h2 class="text-4xl font-bold mb-8 text-center">
+    <section
+      id="contact"
+      class="m-6 md:m-20 p-8 md:p-12 bg-white rounded-lg shadow-lg"
+    >
+      <h2 class="text-3xl md:text-4xl font-bold mb-6 md:mb-8 text-center">
         Interested to work together? Let's talk
       </h2>
       <div class="contact-form">
@@ -173,25 +204,25 @@
           method="post"
           enctype="text/plain"
         >
-          <div class="grid grid-cols-1 gap-6">
+          <div class="grid grid-cols-1 gap-4 md:gap-6">
             <input
               type="text"
               name="name"
-              class="form-control px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-500"
+              class="form-control px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-500"
               placeholder="Your Name"
               required
             />
             <input
               type="email"
               name="email"
-              class="form-control px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-500"
+              class="form-control px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-500"
               placeholder="Email"
               required
             />
             <textarea
               name="message"
               rows="6"
-              class="form-control px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-500"
+              class="form-control px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-500"
               placeholder="Your Message"
               required
             ></textarea>
